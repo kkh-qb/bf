@@ -18,12 +18,12 @@ body{
 }
 
 .content{
-    margin: 10% auto;
+    margin: 15% auto;
     width: 400px;
     max-width: 80vw;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #373e48;
 }
 
@@ -43,11 +43,13 @@ body{
 }
 
 .desc b{
-    color: #64113F;
+    color: #9aa3b1;
 }
 
-.desc b:last-of-type{
-    color: #08B2E3;
+.univ{
+    font-size: .8em;
+    margin-top:5px;
+    color: #9aa3b1;
 }
 
 .tabs{
@@ -61,6 +63,29 @@ body{
     cursor: pointer;
 }
 
+.v1{
+    display: none;
+}
+
+.v2.content{
+    margin-left: 15%;
+}
+
+.divider{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -10vh;
+    height: 120vh;
+    width: 25px;
+    border-left: 10px solid var(--em1);
+    border-right: 10px solid var(--em2);
+    transform: rotate(-10deg);
+    box-sizing:border-box;
+    opacity: .5;
+}
+
+
+
 @font-face {
     font-family: Caveat;
     src: url(font/Caveat-Regular.ttf);
@@ -68,7 +93,7 @@ body{
 
 @media only screen and (max-width: 600px) {
     .content {
-        font-size: 18px;
-        margin-top: 25%;
+      font-size: 18px;
+      margin-top: 25%;
     }
-}
+  }
